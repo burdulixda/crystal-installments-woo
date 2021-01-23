@@ -4,9 +4,9 @@
  * Plugin Name: Crystal Installments for WooCoommerce
  * Plugin URI: https://crystalone.ge
  * Author: George Burduli
- * Author URI: https://facebook.com/trippygb
+ * Author URI: https://github.com/burdulixda
  * Description: A custom WooCommerce payment gateway for processing installments in Credo bank.
- * Version: 1.0
+ * Version: 1.0.1
  * License: 1.0
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * text-domain: uci-woo

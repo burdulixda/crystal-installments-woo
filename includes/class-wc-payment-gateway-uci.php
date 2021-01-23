@@ -53,7 +53,7 @@ class WC_Gateway_Crystal extends WC_Payment_Gateway {
 		$this->secret_hash        = __( 'Crystal Secret Hash (base64)', 'uci-woo' );
 		$this->vendor_url         = __( 'Crystal endpoint URL', 'uci-woo' );
 		$this->handling_fee       = __( 'Crystal handling fee (%)', 'uci-woo' );
-		$this->method_description = __( 'Pay as you go with Crystal bank (lol).', 'uci-woo' );
+		$this->method_description = __( 'Pay as you go with Crystal bank.', 'uci-woo' );
 		$this->has_fields         = false;
 	}
 
