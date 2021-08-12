@@ -346,11 +346,17 @@ class WC_Gateway_Crystal extends WC_Payment_Gateway {
 				/** @var WC_Product $product */
 				$product = $cart_item['data'];
 				$product_quantity = $cart_item['quantity'];
+
+				$price = $order->get_total() * 100;
+
+				if ( $this->handling_fee ) {
+					$price = $price + ($price * $this->handling_fee / 100);
+				}
 				
 				$crystalArr = array(
 					'title' => $product->get_name(),
-					'price' => $cart_item["line_total"] / 85 * 100 / $product_quantity,
-					'price_shop' => $cart_item["line_total"] / 85 * 100 / $product_quantity,
+					'price' => $price,
+					'price_shop' => $price,
 					'quantity' => strval($product_quantity),
 					'vendor_product_id' => $product->get_id()
 				);
